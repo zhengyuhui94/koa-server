@@ -1,0 +1,8 @@
+[2020-07-29T10:23:05.567] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a.status=0 AND b.status=0' at line 1
+[2020-07-29T10:23:20.004] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND a.status=0 AND b.status=0' at line 1
+[2020-07-29T11:45:33.271] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'cart_detail.name' in 'field list'
+[2020-07-29T12:45:47.857] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'good.status' in 'where clause'
+[2020-07-29T14:22:26.722] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.status=0 AND cart_detail.status=0' at line 1
+[2020-07-29T14:25:14.938] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.status=0 AND cart_detail.status=0' at line 1
+[2020-07-29T15:36:25.677] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'statu' in 'where clause'
+[2020-07-29T17:06:27.810] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'

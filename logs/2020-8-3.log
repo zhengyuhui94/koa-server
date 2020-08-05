@@ -1,0 +1,34 @@
+[2020-08-03T11:18:24.777] [ERROR] errorInfo - Cannot read property 'map' of undefined
+[2020-08-03T11:19:22.588] [ERROR] errorInfo - Cannot read property 'map' of undefined
+[2020-08-03T14:04:51.429] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.statu=0 AND cart_detail.statu=0' at line 1
+[2020-08-03T14:04:52.001] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2020-08-03T14:04:52.323] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.statu=0 AND cart_detail.statu=0' at line 1
+[2020-08-03T14:04:52.371] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.statu=0 AND cart_detail.statu=0' at line 1
+[2020-08-03T14:27:53.341] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-08-03T15:40:24.056] [ERROR] errorInfo - pool.beginTransaction is not a function
+[2020-08-03T15:40:24.567] [ERROR] errorInfo - pool.beginTransaction is not a function
+[2020-08-03T16:01:08.403] [ERROR] errorInfo - connection is not defined
+[2020-08-03T16:01:08.859] [ERROR] errorInfo - connection is not defined
+[2020-08-03T16:02:11.946] [ERROR] errorInfo - connection is not defined
+[2020-08-03T16:02:12.676] [ERROR] errorInfo - connection is not defined
+[2020-08-03T16:04:42.712] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:07:38.944] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:07:52.809] [ERROR] errorInfo - read ECONNRESET
+[2020-08-03T16:10:00.780] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:14:01.217] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:24:22.337] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:35:38.361] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:43:39.286] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T16:46:17.974] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T16:46:18.175] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T16:46:50.581] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T16:46:50.801] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T16:52:08.018] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T16:52:08.180] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T17:15:17.703] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-03T17:16:42.147] [ERROR] errorInfo - read ECONNRESET
+[2020-08-03T17:18:10.778] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T17:18:10.943] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T17:19:24.629] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T17:19:24.808] [ERROR] errorInfo - ctx is not defined
+[2020-08-03T17:31:39.266] [ERROR] errorInfo - read ECONNRESET

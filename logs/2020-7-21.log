@@ -1,0 +1,9 @@
+[2020-07-21T14:12:24.280] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT22 0,10' at line 1
+[2020-07-21T14:12:29.891] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT22 0,10' at line 1
+[2020-07-21T14:12:39.967] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT22 0,10' at line 1
+[2020-07-21T14:12:45.700] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT22 0,10' at line 1
+[2020-07-21T14:15:28.456] [ERROR] errorInfo - read ECONNRESET
+[2020-07-21T14:16:10.736] [ERROR] errorInfo - read ECONNRESET
+[2020-07-21T18:24:48.874] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-07-21T18:25:13.540] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-07-21T18:25:24.417] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'

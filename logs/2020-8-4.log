@@ -1,0 +1,10 @@
+[2020-08-04T11:41:34.598] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'test_id' in 'where clause'
+[2020-08-04T13:59:36.406] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.statu=0 AND cart_detail.statu=0' at line 1
+[2020-08-04T13:59:36.568] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cart.statu=0 AND cart_detail.statu=0' at line 1
+[2020-08-04T14:00:53.616] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'money111' in 'field list'
+[2020-08-04T14:02:28.521] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'statusss' in 'field list'
+[2020-08-04T14:21:37.539] [ERROR] errorInfo - total_price is not defined
+[2020-08-04T14:24:39.991] [ERROR] errorInfo - total_price is not defined
+[2020-08-04T17:06:16.940] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY order_info.id DESC' at line 1
+[2020-08-04T17:19:01.698] [ERROR] errorInfo - Cannot read property 'map' of undefined
+[2020-08-04T17:20:36.410] [ERROR] errorInfo - Cannot read property 'map' of undefined

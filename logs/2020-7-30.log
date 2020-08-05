@@ -1,0 +1,2 @@
+[2020-07-30T11:53:24.079] [ERROR] errorInfo - ER_WARN_DATA_OUT_OF_RANGE: Out of range value for column 'mobile' at row 1
+[2020-07-30T15:01:10.597] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

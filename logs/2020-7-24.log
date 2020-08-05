@@ -1,0 +1,6 @@
+[2020-07-24T11:14:11.820] [ERROR] errorInfo - ctx is not defined
+[2020-07-24T11:14:36.800] [ERROR] errorInfo - next() called multiple times
+[2020-07-24T17:14:43.660] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' admin_id=2' at line 1
+[2020-07-24T17:35:14.414] [ERROR] errorInfo - ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+[2020-07-24T17:36:43.405] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-07-24T17:37:21.473] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
