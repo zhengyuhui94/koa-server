@@ -79,6 +79,6 @@ mixinRouter().then(routers => {
     });
 });
 
-app.listen(3003);
+app.listen(8080);
 
-console.log('listening on port 3003');
+console.log('listening on port 8080');
