@@ -1,5 +1,6 @@
 const Koa = require('koa');
-const app = new Koa();
+const koaWebsocket = require('koa-websocket');
+const app = koaWebsocket(new Koa());
 const path = require('path');
 const koaBody = require('koa-body');
 const session = require('koa-session');
@@ -7,11 +8,12 @@ const koaStatic = require('koa-static');
 // 混合配置
 const mixinRouter = require('./mixin/router');
 const mixinMiddleware = require('./mixin/middleware');
+const mixinWebsocketRouter = require('./mixin/websocketRouter');
 // 全局添加方法对象
 global.mysql = require('./mysql');
 global.responseTool = require('./util/responseTool');
 // redis 缓存类
-const redisClient = require('./redis');
+global.redis = require('./redis');
 // 日志类
 const logger = require('./util/log');
 
@@ -76,6 +78,13 @@ mixinMiddleware().then(middlewares => {
 mixinRouter().then(routers => {
     routers.forEach(routerItem => {
         app.use(routerItem.routes()).use(routerItem.allowedMethods());
+    });
+});
+
+// 混合并读取 websocket router 文件配置
+mixinWebsocketRouter().then(routers => {
+    routers.forEach(routerItem => {
+        app.ws.use(routerItem.routes()).use(routerItem.allowedMethods());
     });
 });
 

@@ -9,4 +9,34 @@ redisClient.on('connect', () => {
     console.log('redis连接成功');
 });
 
-module.exports = redisClient;
+class Redis {
+    get(key){
+        return new Promise((resolve, reject) => {
+            redisClient.get(key, (err, res) => {
+                if(err){
+                    reject(err);
+                }else{
+                    resolve(res);
+                }
+            });
+        });
+    }
+    
+    set(key, value, time){
+        return new Promise((resolve, reject) => {
+            redisClient.set(key, value, (err, res) => {
+                if(err){
+                    reject(err);
+                }else{
+                    // 设置存储数据的有效期
+                    if(time){
+                        redisClient.expire(key, time);
+                    }
+                    resolve(res);
+                }
+            });
+        });
+    }
+};
+
+module.exports = new Redis();

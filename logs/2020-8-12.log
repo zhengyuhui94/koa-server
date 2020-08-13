@@ -1,0 +1,4 @@
+[2020-08-12T10:50:19.681] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN admin ON message.admin_id=admin.id LEFT JOIN user ON message.user_id=user.i' at line 1
+[2020-08-12T10:53:04.818] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN admin ON message.admin_id=admin.id LEFT JOIN user ON message.user_id=user.i' at line 1
+[2020-08-12T16:43:10.064] [ERROR] errorInfo - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2020-08-12T17:39:02.049] [ERROR] errorInfo - to is not defined

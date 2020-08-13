@@ -1,0 +1,5 @@
+[2020-08-06T14:47:13.711] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-08-06T14:47:13.939] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-08-06T14:47:58.738] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-08-06T14:47:58.834] [ERROR] errorInfo - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+[2020-08-06T15:28:23.540] [ERROR] errorInfo - Unexpected token 哈 in JSON at position 0

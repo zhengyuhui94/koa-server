@@ -41,7 +41,7 @@ router.post('/add', global.mysql.transactions(
 // 根据商品 id 查询最多两条好的评价信息以及相关的用户信息
 router.get('/queryByGoodId/twoGood', async (ctx, next) => {
     const {good_id} = ctx.request.query;
-    const data = await global.mysql.query(`SELECT evaluate.*, user.name, user.avatar FROM evaluate LEFT JOIN user ON evaluate.user_id=user.id WHERE good_id=${good_id} AND statu=3 LIMIT 2`, ctx);
+    const data = await global.mysql.query(`SELECT evaluate.*, user.name, user.avatar FROM evaluate LEFT JOIN user ON evaluate.user_id=user.id WHERE good_id=${good_id} AND statu=3 ORDER BY evaluate.id desc LIMIT 2`, ctx);
     ctx.body = global.responseTool.success(data);
     await next();
 });
@@ -63,7 +63,7 @@ router.get('/queryByGoodId/list', async (ctx, next) => {
     if(statu === 1 || statu === 2 || statu === 3){
         whereStr = `${whereStr} AND evaluate.statu=${statu}`;
     }
-    const data = await global.mysql.query(`SELECT evaluate.*, user.name, user.avatar FROM evaluate LEFT JOIN user ON evaluate.user_id=user.id ${whereStr}`, ctx);
+    const data = await global.mysql.query(`SELECT evaluate.*, user.name, user.avatar FROM evaluate LEFT JOIN user ON evaluate.user_id=user.id ${whereStr} ORDER BY evaluate.id desc`, ctx);
     // 获取商品评价图片
     if(data.length > 0){
         const promises = data.map(item => {

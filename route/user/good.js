@@ -17,8 +17,17 @@ router.get('/list', async (ctx, next) => {
 // 查询单个商品
 router.get('/infoById', async (ctx, next) => {
     const {id} = ctx.request.query;
-    const data = await global.mysql.query(`SELECT * FROM good WHERE id=${id}`, ctx);
-    ctx.body = global.responseTool.success(data[0]);
+    // redis 缓存中有相应的数据，则不从 mysql 数据库中读取数据，直接读取缓存数据返回即可
+    // 反之，则读取数据库数据，并将数据存储到 redis 缓存中
+    const redisData = await global.redis.get(id);
+    if(redisData){
+        ctx.body = global.responseTool.success(JSON.parse(redisData));
+    }else{
+        const data = await global.mysql.query(`SELECT * FROM good WHERE id=${id}`, ctx);
+        // 缓存当前商品信息，设置 1 小时的有效期
+        global.redis.set(id, JSON.stringify(data[0]), 3600);
+        ctx.body = global.responseTool.success(data[0]);
+    }
     await next();
 });
 
