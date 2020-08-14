@@ -67,13 +67,6 @@ mixinMiddleware().then(middlewares => {
     });
 });
 
-// mysql 事务处理中间件 【只有当用到多表修改数据的时候，才使用事务】
-// 过多的使用事务，会造成不必要的性能消耗
-// app.use(async (ctx, next) => {
-//     // 开启事务
-//     await global.mysql.transactions(next);
-// });
-
 // 混合并读取 router 文件配置
 mixinRouter().then(routers => {
     routers.forEach(routerItem => {
