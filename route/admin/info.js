@@ -9,7 +9,6 @@ router.get('/getInfoById', async (ctx, next) => {
     const {adminId} = ctx.session;
     const data = await global.mysql.query(`SELECT * from admin WHERE id=${adminId}`, ctx);
     const {id, name, avatar, remark, sex, birthday, remark_file} = data[0];
-    ctx.set('Access-Control-Allow-Origin', '*');
     ctx.body = global.responseTool.success({
         id,
         name,
