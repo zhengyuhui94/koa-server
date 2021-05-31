@@ -1,4 +1,5 @@
 const Koa = require('koa');
+// koa 的中间件对 websocket 的封装
 const koaWebsocket = require('koa-websocket');
 const app = koaWebsocket(new Koa());
 const path = require('path');
